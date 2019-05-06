@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hien thi n so nguyen to</title>
+</head>
+<body>
+<script>
+  let stt = parseInt(prompt("Số lượng số nguyên tố"));
+  let number = 1;
+  let count = 0;
+  while (count < stt) {
+    let kq = true;
+    for (let a = 2; a < number; a++) {
+      if (number % a == 0) {
+        kq = false;
+      }
+    }
+    if (kq) {
+      document.write(number + "<br>");
+      number++;
+    }
+    count++;
+  }
+</script>
+</body>
+</html>
